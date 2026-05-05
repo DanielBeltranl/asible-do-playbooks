@@ -1,0 +1,13 @@
+---
+- name: Despliegue de Infraestructura Web
+  hosts: targets
+  become: yes
+  roles:
+    - webserver
+
+- name: Despliegue de Artifact Repository
+  hosts: nexus
+  become: yes
+  roles:
+    - docker-install
+    - nexus-image-deploy

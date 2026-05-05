@@ -1,0 +1,16 @@
+- name: Instalar Apache
+  apt:
+    name: "{{ apache_package }}"
+    state: present
+    update_cache: yes
+
+- name: Asegurar que Apache este iniciado
+  service:
+    name: "{{ apache_service }}"
+    state: started
+    enabled: yes
+
+- name: Crear un index.html personalizado
+  copy:
+    content: "<h1>Desplegado por Ansible desde el Control Node</h1>"
+    dest: /var/www/html/index.html
