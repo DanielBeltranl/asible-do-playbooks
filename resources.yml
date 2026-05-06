@@ -1,4 +1,4 @@
-nexus-server:
+ansible-control-node:
   nodename: ansible-control-node
   hostname: 165.227.198.43
   username: root
