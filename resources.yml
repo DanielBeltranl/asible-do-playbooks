@@ -5,6 +5,9 @@ nexus:
   description: "Droplet de DigitalOcean - Sanos y Salvos"
   tags: nexus, infra
   osFamily: unix
-  # Parametros para que Rundeck sepa usar Ansible con este nodo
+  # --- ESTO ES LO QUE LE FALTA A RUNDECK ---
+  ssh-keypath: /home/rundeck/.ssh/id_rsa_rundeck
+  ssh-authentication: privateKey
+  # -----------------------------------------
   ansible-ssh-user: root
   ansible-ssh-keypath: /home/rundeck/.ssh/id_rsa_rundeck
