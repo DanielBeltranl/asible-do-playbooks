@@ -1,5 +1,5 @@
-ansible-control-node:
-  nodename: ansible-control-node
+nexus:
+  nodename: nexus
   hostname: 165.227.198.43
   username: root
   description: "Droplet de DigitalOcean - Sanos y Salvos"
