@@ -1,9 +1,9 @@
-nexus:
-  nodename: nexus
+ansible-control-node:
+  nodename: ansible-control-node
   hostname: 165.227.198.43
   username: root
   description: "Droplet de DigitalOcean - Sanos y Salvos"
-  tags: nexus, infra
+  tags: ansible, infra
   osFamily: unix
   # --- ESTO ES LO QUE LE FALTA A RUNDECK ---
   ssh-keypath: /home/rundeck/.ssh/id_rsa_rundeck
